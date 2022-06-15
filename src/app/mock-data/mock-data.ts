@@ -63,3 +63,96 @@ export const CongratulationToasts = [
   "За счастье, добро и зелёное бабло!!!",
   "Хоть в столице, хоть в глуши ,первый тост за музыку души!"
 ];
+
+interface Message {
+  user: string;
+  avatar: string;
+  text: string;
+}
+export const MESSAGES: Message[] = [
+  {
+    user: 'Anna Kopylova',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U03CY5X4ASD-651255f75aa5-512',
+    text: 'Пусть всегда и во всём сопутствует тебе удача, а задуманное сбывается скорее'
+  },
+  {
+    user: 'Darya Nopina',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U03J6HZHMB8-b8c8aae37a20-512',
+    text: 'Радости в каждом дне, крепкого здоровья и силы духа, покорять новые вершины!'
+  },
+  {
+    user: 'Mikhail Konev',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U039HJAPCRG-6be2e030912b-512',
+    text: 'Больше радости и меньше потраченых нервных клеток!'
+  },
+  {
+    user: 'Dmitriy Kulbed',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U02CZ6NS541-562135f66949-512',
+    text: 'Интересных задач и открытия новых горизонтов'
+  },
+  {
+    user: 'Roman Bosenko',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U02S7A5FZPX-4773453a645e-512',
+    text: 'Огромной удачи во всех планах и море энергии на эти свершения!'
+  },
+  {
+    user: 'Ekaterina Axenova',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U02CDJWSX9U-0ad5a2ec1161-512',
+    text: ''
+  },
+  {
+    user: 'Ruslan Kravchenko',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U03K3F4JP45-ac6f23bcaec0-512',
+    text: 'Да прибудет с тобой терпение и радость в жизни. Всех благ и всего самого лучшего!'
+  },
+  {
+    user: 'Nikita Rudakov',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U03KK2G1M1P-afadd1bdff87-512',
+    text: 'Постоянно совершенствоваться и идти только вперед.'
+  },
+  {
+    user: 'Amir Inalov',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U03K6AF8Y9Z-b430b2be41a3-512',
+    text: 'Достигать поставленных целей и не опускать руки'
+  },
+  {
+    user: 'Nikolay Pliushchenko',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U01AT7M2VUG-33ae51dbdab7-512',
+    text: 'Да прибудет с тобой Сила, и путь её не будет тернист\n'
+  },
+  {
+    user: 'Mansur Zafesov',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U03JRQ85E1M-fd0f4d8de280-512',
+    text: 'Ровный код и вкусный кофе братик'
+  },
+  {
+    user: 'Sergey Smirnov',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U021Y4R4GUB-8bb05fece2b0-512',
+    text: 'Привет, с новым годом, ты не так давно с нами, но уже стал неотьемлемой частью команды, желаю тебе и впредь оставаться таким же крутым и Асланом. Мы все тебя глубоко ценим и в обиду не дадим, еще раз поздравляю'
+  },
+  {
+    user: 'Mikhail Kleputin',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U01GW4FNGAU-515083ed09bc-512',
+    text: 'Побольше интересных задач, достигнутых целей и адекватных коллег'
+  },
+  {
+    user: 'Dolganov Kirill',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U03680U4ET1-0136e03d92ca-512',
+    text: 'Удачи в новых свершениях и во всех задуманных делах!'
+  },
+  {
+    user: 'Evgeniy Bobkov',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U02ER8BM9RT-3b86110ed673-512',
+    text: 'Возможно банально, но все же хочу пожелать на мой взгляд самого важного - крепкого здоровья! А все остальное обязательно будет )'
+  },
+  {
+    user: 'Lyubov Yureva',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U036NJGPW2X-fad99222cb37-512',
+    text: 'Желаю крепкого здоровья, удачи в любых направлениях, интересных задач и сбывания всех мечт!'
+  },
+  {
+    user: 'Viktor Fenev',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U017ZPDGL4Q-79ea6d5ef189-512',
+    text: 'Желаю крепкого здоровья и успехов во всех начинаниях!'
+  }
+];
