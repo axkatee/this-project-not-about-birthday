@@ -1,0 +1,154 @@
+.toasts-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wineglass-icon {
+  width: 550px;
+  height: 550px;
+}
+
+.icon-left {
+  position: relative;
+  top: 4em;
+  left: 13em;
+  transform: rotate(350deg);
+}
+
+.icon-right {
+  position: relative;
+  top: 5em;
+  right: 13em;
+  transform: rotate(12deg);
+
+}
+
+.wineglass-container {
+  margin-top: 100px;
+}
+
+.icon-right-animation {
+  animation-name: wineglassMoveRight;
+  animation-duration: .6s;
+}
+
+.icon-left-animation {
+  animation-name: wineglassMoveLeft;
+  animation-duration: .6s;
+}
+
+.toast-text {
+  width: 45em;
+  height: 5em;
+  background-color: #80d0d2;
+  margin: 25px 0 10px 0;
+  border-radius: 4px;
+  p {
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, serif;
+  }
+}
+
+.toast-jump-text {
+  overflow: hidden;
+  opacity: 0;
+  position: relative;
+  top: -28em;
+  width: 5em;
+  height: 2em;
+  background-color: #80d0d2;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.toast-jump-text-animation {
+  animation-name: textJumping;
+  animation-delay: .18s;
+  animation-duration: .5s;
+}
+
+.toast-button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgba(250, 126, 126);
+  border: none;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: rgb(250, 126, 126,0.7);
+  }
+}
+
+@keyframes wineglassMoveLeft {
+  0% {
+    top: 4em;
+    left: 13em;
+    transform: rotate(350deg);
+  }
+  50% {
+    top: 2em;
+    left: 17em;
+    transform: rotate(360deg);
+  }
+  75% {
+    top: 1em;
+    left: 14em;
+  }
+  100% {
+    top: 4em;
+    left: 13em;
+  }
+}
+
+@keyframes wineglassMoveRight {
+  0% {
+    top: 5em;
+    right: 13em;
+    transform: rotate(10deg);
+  }
+  50% {
+    top: 3em;
+    right: 17em;
+    transform: rotate(0deg);
+  }
+
+  75% {
+    top: 2em;
+    right: 14em;
+  }
+  100% {
+    top: 5em;
+    right: 13em;
+  }
+}
+
+@keyframes textJumping {
+  0% {
+    opacity: 0;
+    top: -28em;
+    width: 1em;
+    height: 2em;
+  }
+  50% {
+    opacity: 60%;
+    top: -37em;
+    width: 8em;
+  }
+
+  75% {
+    opacity: 80%;
+    top: -25em;
+    width: 15em;
+  }
+  100% {
+    opacity: 0;
+    top: -5em;
+    width: 45em;
+  }
+}
