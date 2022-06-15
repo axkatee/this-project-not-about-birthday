@@ -1,1 +1,21 @@
-<p>main works!</p>
+<div>
+  <ng-particles
+    [id]="id"
+    [options]="particlesOptions"
+    (particlesInit)="particlesInit($event)">
+  </ng-particles>
+  <div class="wrapper">
+    <video autoplay playsinline muted loop preload>
+      <source src="https://media.istockphoto.com/videos/multicolored-balloons-flying-in-the-blue-sky-video-id1258520341" />
+    </video>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <mask id="mask" x="0" y="0" width="100%" height="100%">
+          <rect x="0" y="0" width="100%" height="100%"/>
+          <text x="75" y="10">С Наступающим Днем Рождения!</text>
+        </mask>
+      </defs>
+      <rect x="0" y="0" width="100%" height="100%"/>
+    </svg>
+  </div>
+</div>

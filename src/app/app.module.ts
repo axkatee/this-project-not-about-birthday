@@ -7,6 +7,7 @@ import { ChatDialogComponent } from './components/chat-dialog/chat-dialog.compon
 import { SignupComponent } from './pages/signup/signup.component';
 import { MainComponent } from './pages/main/main.component';
 import { CongratulationToastsComponent } from './pages/congratulation-toasts/congratulation-toasts.component';
+import {NgParticlesModule} from 'ng-particles';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CongratulationToastsComponent } from './pages/congratulation-toasts/con
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
