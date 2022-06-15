@@ -21,7 +21,16 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@services/": ["src/app/services/*"],
+      "@environments/": ["src/environments/*"],
+      "@consts": ["src/app/consts.ts"],
+      "@mock-data": ["src/app/mock-data/*"],
+      "@interfaces/": ["src/app/interfaces/*"],
+      "@components/": ["src/app/components/*"],
+      "@pages/": ["src/app/pages/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
