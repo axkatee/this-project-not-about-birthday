@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
+import {Pages} from '@consts';
 
 @Component({
   selector: 'app-signup',
@@ -17,6 +18,6 @@ export class SignupComponent implements OnInit {
 
 
   redirect() {
-    this._router.navigate(['/main'])
+    this._router.navigate([Pages.Main])
   }
 }
