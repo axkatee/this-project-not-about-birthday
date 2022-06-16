@@ -22,7 +22,7 @@
 <ng-template #chatContent>
   <div class="messages-container" #messagesContainer>
     <div class="message" *ngFor="let message of messagesItems">
-      <img [src]="message.avatar" class="user-avatar" lazy/>
+      <img [src]="message.avatar" class="user-avatar"/>
       <div class="message-inner">
         <span class="username">{{message.user}}</span>
         <span class="message-text">{{message.text}}</span>
