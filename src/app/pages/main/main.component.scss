@@ -32,3 +32,12 @@
     }
   }
 }
+
+.gift {
+  cursor: pointer;
+  position: absolute;
+  top: calc(50% - 250px);
+  left: calc(50% - 350px);
+  width: 700px;
+  margin: auto;
+}
