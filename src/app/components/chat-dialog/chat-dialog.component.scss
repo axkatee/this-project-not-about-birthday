@@ -34,6 +34,7 @@
 
     .notification-img {
       width: 70px;
+      height: 70px;
       margin-right: 15px;
     }
   }
@@ -55,20 +56,22 @@
 }
 
 .messages-container {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 10px;
   height: 100%;
   overflow:auto;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   .message {
     display: flex;
     width: 80%;
+    height: fit-content;
     padding: 10px;
     border-radius: 15px;
     background-color: #f8f6f6;
     animation: .5s appearance;
+    margin-bottom: 10px;
 
     .user-avatar {
       min-width: 60px;

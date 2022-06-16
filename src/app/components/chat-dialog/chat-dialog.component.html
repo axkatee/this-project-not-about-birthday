@@ -30,3 +30,5 @@
     </div>
   </div>
 </ng-template>
+
+<img *ngFor="let message of messages" [src]="message.avatar" [height]="'0'" [width]="'0'"/>

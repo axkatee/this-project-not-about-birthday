@@ -35,7 +35,7 @@ export class ChatDialogComponent implements OnInit {
       setTimeout(() => {
         this.messagesContainer!.nativeElement.scrollTop = this.messagesContainer!.nativeElement.scrollHeight;
       });
-    }, 2000);
+    }, 3000);
   }
 
 }
