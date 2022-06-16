@@ -23,13 +23,13 @@
       "dom"
     ],
     "paths": {
-      "@services/": ["src/app/services/*"],
-      "@environments/": ["src/environments/*"],
+      "@services/*": ["src/app/services/*"],
+      "@environments/*": ["src/environments/*"],
       "@consts": ["src/app/consts.ts"],
-      "@mock-data": ["src/app/mock-data/*"],
-      "@interfaces/": ["src/app/interfaces/*"],
-      "@components/": ["src/app/components/*"],
-      "@pages/": ["src/app/pages/*"]
+      "@mock-data": ["src/app/mock-data/mock-data"],
+      "@interfaces/*": ["src/app/interfaces/*"],
+      "@components/*": ["src/app/components/*"],
+      "@pages/*": ["src/app/pages/*"]
     }
   },
   "angularCompilerOptions": {

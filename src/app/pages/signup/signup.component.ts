@@ -9,15 +9,12 @@ import {Pages} from '@consts';
 })
 export class SignupComponent implements OnInit {
 
-  constructor(
-    private _router: Router
-  ) { }
+  constructor(private _router: Router) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 
-  redirect() {
-    this._router.navigate([Pages.Main])
+  redirect(): void {
+    this._router.navigate([Pages.Main]);
   }
 }

@@ -9,3 +9,6 @@ export const enum AnimationClasses {
   'RightWineglass' = 'icon-right-animation',
   'TextContainer' = 'toast-jump-text-animation',
 }
+
+export const TITLE = 'Sign Up';
+export const BIRTHDAY_TITLE = '🎊 Happy Birthday! 🎊';

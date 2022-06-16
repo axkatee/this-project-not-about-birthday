@@ -1,6 +1,6 @@
 import {Component, ElementRef, OnInit, Renderer2, ViewChild} from '@angular/core';
 import {AnimationClasses} from '@consts';
-import {CongratulationToasts} from '../../mock-data/mock-data';
+import {CongratulationToasts} from '@mock-data';
 
 @Component({
   selector: 'app-congratulation-toasts',

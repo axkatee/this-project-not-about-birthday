@@ -1,6 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
-import {MESSAGES} from '../../mock-data/mock-data';
+import {MESSAGES} from '@mock-data';
 
 @Component({
   selector: 'app-chat-dialog',
