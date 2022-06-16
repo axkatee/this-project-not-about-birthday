@@ -1,1 +1,32 @@
-<p>chat-dialog works!</p>
+<div class="chat">
+  <div class="content" *ngIf="(isButtonClicked$ | async);then chatContent else initContent"></div>
+</div>
+
+
+
+<ng-template #initContent>
+  <div class="incoming-message-content">
+    <div class="notification-container">
+      <img src="assets/mail.png" class="notification-img" draggable="false">
+      <div class="notification-inner">
+        <span class="notification-title">У вас новое уведомление</span>
+        <span class="notification-text">Вас хотят пригласить в чат</span>
+      </div>
+    </div>
+    <button class="accept-invite" (click)="onAcceptButtonClick()">Принять</button>
+  </div>
+</ng-template>
+
+
+
+<ng-template #chatContent>
+  <div class="messages-container" #messagesContainer>
+    <div class="message" *ngFor="let message of messagesItems">
+      <img [src]="message.avatar" class="user-avatar" lazy/>
+      <div class="message-inner">
+        <span class="username">{{message.user}}</span>
+        <span class="message-text">{{message.text}}</span>
+      </div>
+    </div>
+  </div>
+</ng-template>

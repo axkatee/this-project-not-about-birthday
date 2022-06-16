@@ -1,0 +1,98 @@
+.chat {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  border: 3px solid #f3f1f1;
+  border-radius: 5px;
+}
+
+.incoming-message-content {
+  display: flex;
+  flex-direction: column;
+
+  .notification-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+    .notification-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .notification-title {
+        font-weight: bold;
+        font-size: 20px;
+        animation: 3s blink-text infinite;
+      }
+    }
+
+    .notification-img {
+      width: 70px;
+      margin-right: 15px;
+    }
+  }
+
+  .accept-invite {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    background-color: orangered;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .7;
+    }
+  }
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  height: 100%;
+  overflow:auto;
+
+  .message {
+    display: flex;
+    width: 80%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #f8f6f6;
+    animation: .5s appearance;
+
+    .user-avatar {
+      min-width: 60px;
+      height: 60px;
+      border-radius: 50px;
+      margin-right: 10px;
+    }
+
+    .message-inner {
+      display: flex;
+      flex-direction: column;
+
+      .username {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+@keyframes blink-text {
+  from { color: black }
+  50% { color: red }
+  to { color: black }
+}
+
+@keyframes appearance {
+  from { opacity: 0.2 }
+  to { opacity: 1 }
+}
