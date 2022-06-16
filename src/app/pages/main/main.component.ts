@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 import {Engine} from 'tsparticles-engine';
 import {loadFireworksPreset} from 'tsparticles-preset-fireworks';
+import {Pages} from '@consts';
 
 @Component({
   selector: 'app-main',
@@ -9,7 +11,7 @@ import {loadFireworksPreset} from 'tsparticles-preset-fireworks';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit(): void {
   }
@@ -39,5 +41,9 @@ export class MainComponent implements OnInit {
 
   async particlesInit(engine: Engine): Promise<void> {
     await loadFireworksPreset(engine);
+  }
+
+  onGiftClick(): void {
+    this._router.navigate([Pages.CongratulationToasts]);
   }
 }
