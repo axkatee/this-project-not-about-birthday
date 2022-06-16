@@ -18,10 +18,9 @@ export class AppComponent implements OnInit, OnDestroy {
       .pipe(
         takeUntil(this.destroy$),
         filter(event => event instanceof NavigationEnd),
-        map(event => (event as NavigationEnd).url.replace('/', '')),
-        distinctUntilChanged())
+        map(event => (event as NavigationEnd).url.replace('/', '')))
       .subscribe(path => {
-        path === Pages.SignUp
+        path === Pages.SignUp || !path
           ? document.title = TITLE
           : document.title = BIRTHDAY_TITLE;
       })

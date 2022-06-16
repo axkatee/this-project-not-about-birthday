@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, OnInit, Output, ViewChild, EventEmitter} from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
 import {MESSAGES} from '@mock-data';
 
@@ -9,14 +9,14 @@ import {MESSAGES} from '@mock-data';
 })
 export class ChatDialogComponent implements OnInit {
   @ViewChild('messagesContainer') messagesContainer: ElementRef | undefined;
+  @Output() showGift = new EventEmitter<boolean>()
   messages = MESSAGES;
   messagesItems: any[] = [];
   isButtonClicked$ = new BehaviorSubject<boolean>(false);
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   onAcceptButtonClick(): void {
     this.isButtonClicked$.next(true);
@@ -29,11 +29,12 @@ export class ChatDialogComponent implements OnInit {
         this.messagesItems.push(this.messages[index]);
         index++;
       } else {
+        this.showGift.emit(true);
         clearInterval(timer);
       }
       setTimeout(() => {
         this.messagesContainer!.nativeElement.scrollTop = this.messagesContainer!.nativeElement.scrollHeight;
-      }, 0);
+      });
     }, 3000);
   }
 

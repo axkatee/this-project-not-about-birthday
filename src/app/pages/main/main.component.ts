@@ -10,11 +10,12 @@ import {Pages} from '@consts';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  isShowGift = false;
 
   constructor(private _router: Router) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
+
   id = "tsparticles";
   particlesOptions = {
     particles: {
@@ -45,5 +46,9 @@ export class MainComponent implements OnInit {
 
   onGiftClick(): void {
     this._router.navigate([Pages.CongratulationToasts]);
+  }
+
+  showGift(event: boolean): void {
+   this.isShowGift = event;
   }
 }
