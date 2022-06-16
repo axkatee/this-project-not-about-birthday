@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Renderer2} from '@angular/core';
 import {Router} from '@angular/router';
 import {Engine} from 'tsparticles-engine';
 import {loadFireworksPreset} from 'tsparticles-preset-fireworks';
@@ -36,6 +36,9 @@ export class MainComponent implements OnInit {
     fullScreen: {
       enable: true,
       zIndex: -1
+    },
+    style: {
+      top: '150px'
     },
     preset: "fireworks",
   };

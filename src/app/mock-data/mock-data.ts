@@ -118,7 +118,7 @@ export const MESSAGES: Message[] = [
   {
     user: 'Nikolay Pliushchenko',
     avatar: 'https://ca.slack-edge.com/T45P9FH0X-U01AT7M2VUG-33ae51dbdab7-512',
-    text: 'Да прибудет с тобой Сила, и путь её не будет тернист\n'
+    text: 'Да прибудет с тобой Сила, и путь её не будет тернист'
   },
   {
     user: 'Mansur Zafesov',
@@ -166,8 +166,13 @@ export const MESSAGES: Message[] = [
     text: 'Желаю чтобы в каждом дне ты видел радостные моменты и чтобы тебя окружали только добрые и нужные люди! Я очень рад, что Бог дал нам знать друг друга! Благословений тебе и твоей семье во всем! Happy Birthday!!!'
   },
   {
-    user: 'Liliana Storchilova\n',
+    user: 'Liliana Storchilova',
     avatar: 'https://ca.slack-edge.com/T45P9FH0X-U01PDUTA2G0-e378363f8d26-512',
     text: 'Нескончаемого энтузиазма, безграничного терпения, самостоятельных сотрудников, ярких эмоций и поменьше всего того, что тебе не нравится!'
+  },
+  {
+    user: 'Pavel Petrash',
+    avatar: 'https://ca.slack-edge.com/T45P9FH0X-U45PDTBB9-5bb9add5662e-512',
+    text: 'Желаю крепкого здоровья, семейного благополучия,  счастья , удачи в начинаниях!'
   }
 ];

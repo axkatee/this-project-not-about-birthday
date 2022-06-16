@@ -10,8 +10,8 @@
 }
 
 .wineglass-icon {
-  width: 750px;
-  height: 750px;
+  width: auto;
+  height: 47em;
 }
 
 .icon-left {
@@ -40,8 +40,8 @@
 }
 
 .toast-text {
-  width: 50em;
-  height: 6em;
+  width: 800px;
+  height: 96px;
   background-color: #80d0d2;
   margin: 25px 0 10px 0;
   border-radius: 4px;
@@ -49,7 +49,7 @@
     padding: 20px;
     margin: 0;
     font-family: Arial, serif;
-    font-size: 21px;
+    font-size: 20px;
     text-align: center;
   }
 }
@@ -61,9 +61,10 @@
   top: -41em;
   width: 5em;
   height: 2em;
-  background-color: #80d0d2;
+  background-color: #fddf6d;
   padding-top: 10px;
   text-align: center;
+  border-radius: 50px;
 }
 
 .toast-jump-text-animation {
@@ -73,14 +74,14 @@
 }
 
 .toast-button {
-  width: 6em;
-  height: 3em;
+  width: 96px;
+  height: 48px;
   cursor: pointer;
   background-color: rgba(250, 126, 126);
   border: none;
   border-radius: 3px;
   font-size: 17px;
-  margin-bottom: 10em;
+  margin-bottom: 5%;
 
   &:hover {
     background-color: rgb(250, 126, 126,0.7);
@@ -105,6 +106,7 @@
   100% {
     top: 4em;
     left: 17em;
+
   }
 }
 
@@ -133,14 +135,16 @@
 @keyframes textJumping {
   0% {
     opacity: 0;
-    top: -51em;
+    top: -43em;
     width: 1em;
     height: 2em;
+    background-color: #fddf6d;
   }
   50% {
     opacity: 60%;
-    top: -54em;
+    top: -51em;
     width: 8em;
+    background-color: #fddf6d;
   }
 
   75% {
@@ -152,5 +156,18 @@
     opacity: 0;
     top: -20em;
     width: 45em;
+    background-color: #80d0d2;
+  }
+}
+
+@media (max-width: 1510px) {
+  .wineglass-icon {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1410px) {
+  .wineglass-icon {
+    font-size: 12px;
   }
 }
