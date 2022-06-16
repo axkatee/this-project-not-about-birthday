@@ -1,11 +1,14 @@
-<div class="toasts-container">
-  <div class="wineglass-container">
-    <img #leftWineglass alt="wineglass" class="wineglass-icon icon-left" src="assets/wineglass-1.svg"/>
-    <img #rightWineglass alt="wineglass" class="wineglass-icon icon-right" src="assets/wineglass-2.svg"/>
+<div class="congratulation-toasts-page">
+  <div class="toasts-container">
+    <div class="wineglass-container">
+      <img #leftWineglass alt="wineglass" class="wineglass-icon icon-left" src="assets/wineglass-1.svg"/>
+      <img #rightWineglass alt="wineglass" class="wineglass-icon icon-right" src="assets/wineglass-2.svg"/>
+    </div>
+    <div class="toast-text">
+      <p>{{toastMessage}}</p>
+    </div>
+    <button class="toast-button" (click)="getToast()">Тост!</button>
+    <div #toastText class="toast-jump-text">Выпьем!</div>
   </div>
-  <div class="toast-text">
-    <p>{{toastMessage}}</p>
-  </div>
-  <button class="toast-button" (click)="getToast()">Тост!</button>
-  <div #toastText class="toast-jump-text">Выпьем!</div>
 </div>
+
