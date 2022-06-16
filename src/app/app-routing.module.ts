@@ -7,7 +7,7 @@ import {SignupComponent} from '@pages/signup/signup.component';
 const routes: Routes = [
   {path: 'sign-up', component: SignupComponent},
   {path: 'main', component: MainComponent},
-  {path: 'congratulation-toasts', component: CongratulationToastsComponent},
+  {path: 'cheers', component: CongratulationToastsComponent},
   {path: '**', redirectTo: 'sign-up', pathMatch: 'full'},
 ];
 

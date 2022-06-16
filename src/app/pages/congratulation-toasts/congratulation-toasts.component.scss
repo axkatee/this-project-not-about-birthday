@@ -1,3 +1,8 @@
+.congratulation-toasts-page {
+  background-color: rgba(128, 208, 210, 0.11);
+  height: 100%;
+}
+
 .toasts-container {
   width: 100%;
   height: 80%;
@@ -8,27 +13,27 @@
 }
 
 .wineglass-icon {
-  width: 550px;
-  height: 550px;
+  width: 750px;
+  height: 750px;
 }
 
 .icon-left {
   position: relative;
   top: 4em;
-  left: 13em;
+  left: 17em;
   transform: rotate(350deg);
 }
 
 .icon-right {
   position: relative;
   top: 5em;
-  right: 13em;
+  right: 17em;
   transform: rotate(12deg);
 
 }
 
 .wineglass-container {
-  margin: auto;
+  margin: auto auto 0 auto;
 }
 
 .icon-right-animation {
@@ -42,8 +47,8 @@
 }
 
 .toast-text {
-  width: 45em;
-  height: 5em;
+  width: 50em;
+  height: 6em;
   background-color: #80d0d2;
   margin: 25px 0 10px 0;
   border-radius: 4px;
@@ -51,6 +56,8 @@
     padding: 20px;
     margin: 0;
     font-family: Arial, serif;
+    font-size: 21px;
+    text-align: center;
   }
 }
 
@@ -58,7 +65,7 @@
   overflow: hidden;
   opacity: 0;
   position: relative;
-  top: -28em;
+  top: -41em;
   width: 5em;
   height: 2em;
   background-color: #80d0d2;
@@ -73,12 +80,13 @@
 }
 
 .toast-button {
-  width: 100px;
-  height: 40px;
+  width: 6em;
+  height: 3em;
   cursor: pointer;
   background-color: rgba(250, 126, 126);
   border: none;
   border-radius: 3px;
+  font-size: 17px;
 
   &:hover {
     background-color: rgb(250, 126, 126,0.7);
@@ -88,67 +96,67 @@
 @keyframes wineglassMoveLeft {
   0% {
     top: 4em;
-    left: 13em;
+    left: 17em;
     transform: rotate(350deg);
   }
   50% {
     top: 2em;
-    left: 17em;
+    left: 24em;
     transform: rotate(360deg);
   }
   75% {
     top: 1em;
-    left: 14em;
+    left: 20em;
   }
   100% {
     top: 4em;
-    left: 13em;
+    left: 17em;
   }
 }
 
 @keyframes wineglassMoveRight {
   0% {
     top: 5em;
-    right: 13em;
+    right: 17em;
     transform: rotate(10deg);
   }
   50% {
     top: 3em;
-    right: 17em;
+    right: 24em;
     transform: rotate(0deg);
   }
 
   75% {
     top: 2em;
-    right: 14em;
+    right: 20em;
   }
   100% {
     top: 5em;
-    right: 13em;
+    right: 17em;
   }
 }
 
 @keyframes textJumping {
   0% {
     opacity: 0;
-    top: -28em;
+    top: -42em;
     width: 1em;
     height: 2em;
   }
   50% {
     opacity: 60%;
-    top: -37em;
+    top: -46em;
     width: 8em;
   }
 
   75% {
     opacity: 80%;
-    top: -25em;
+    top: -34em;
     width: 15em;
   }
   100% {
     opacity: 0;
-    top: -5em;
+    top: -8em;
     width: 45em;
   }
 }
