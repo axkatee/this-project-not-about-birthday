@@ -1,7 +1,7 @@
 
 .toasts-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,7 @@
 
 .toast-text {
   width: 800px;
-  height: 96px;
+  min-height: 96px;
   background-color: #80d0d2;
   margin: 25px 0 10px 0;
   border-radius: 4px;
@@ -60,7 +60,7 @@
   position: relative;
   top: -41em;
   width: 5em;
-  height: 2em;
+  min-height: 2em;
   background-color: #fddf6d;
   padding-top: 10px;
   text-align: center;
@@ -75,7 +75,7 @@
 
 .toast-button {
   width: 96px;
-  height: 48px;
+  min-height: 48px;
   cursor: pointer;
   background-color: rgba(250, 126, 126);
   border: none;
